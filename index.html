@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul.Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c3f5145397.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/rahullogo1.webp" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>STUDENT</p>
+            <h1>Hi,I'm <span>Rahul</span><br>from Chitkara University</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/rahulpic.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Rahul, an aspiring software developer currently pursuing a Bachelor of Engineering (B.E.) in Computer Science Engineering from Chitkara University, Punjab. I completed my schooling at Bhartiya Public School (BPS), Ambala Cantt, Haryana. Passionate about technology and problem-solving, I enjoy working on projects that involve logical reasoning and logic building, and I am constantly exploring new technologies to enhance my skills. I actively solve problems on platforms like LeetCode to strengthen my problem-solving abilities. I am eager to learn, innovate, and contribute to meaningful tech-driven solutions.  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Student</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Studentexpe</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                    </ul>
+                </div><div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Studentedu</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                        <li><span>Student</span><br>Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Service 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis magni ut dolorum quasi dignissimos ani</p>
+                <a href="">Learn more</a>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Service 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis magni ut dolorum quasi dignissimos ani</p>
+                <a href="">Learn more</a>
+            </div>
+
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Service 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis magni ut dolorum quasi dignissimos ani</p>
+                <a href="">Learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
