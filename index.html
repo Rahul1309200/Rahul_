@@ -131,8 +131,35 @@
                 </div>
             </div>
 
+            <div class="work hidden">
+                <img src="/images/rahullogo1.webp" alt="">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis Corrupti, voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work hidden">
+                <img src="/images/rahullogo1.webp" alt="">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis Corrupti, voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work hidden">
+                <img src="/images/rahullogo1.webp" alt="">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis Corrupti, voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
         </div>
-        <a href="#" class="btn">See more</a>
+        <a class="btn" id="see-more">See more</a>
     </div>    
 </div>
 <div id="contact">
@@ -205,6 +232,20 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+document.getElementById("see-more").addEventListener("click", function () {
+    let hiddenProjects = document.querySelectorAll(".work.hidden");
+
+    hiddenProjects.forEach((project) => {
+        project.classList.add("visible");
+        project.classList.remove("hidden");
+    });
+
+    // Hide the "See More" button after revealing all projects
+    this.style.display = "none";
+});
+
   </script>
 </body>
 </html>
