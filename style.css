@@ -320,6 +320,13 @@ form btn2{
 nav .fas{
     display: none;
 }
+
+.Resume{
+    margin-top: 0;
+}
+.CV{
+    margin-bottom: 10px;
+}
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/rahulpic.jpg);
